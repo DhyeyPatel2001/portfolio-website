@@ -32,7 +32,6 @@ const Hero = () => {
                         className="text-muted text-lg max-w-lg mb-8 mx-auto md:mx-0"
                     >
                         Data Scientist & ML Engineer specializing in NLP, Predictive Modeling, and AI Safety.
-                        Currently pursuing MS CS at UT Arlington.
                     </motion.p>
 
                     <motion.div
