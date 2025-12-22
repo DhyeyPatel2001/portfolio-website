@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
     return (
@@ -21,7 +22,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-4xl md:text-6xl font-bold text-text mb-4"
                     >
-                        Dhyey Patel.
+                        Dhyey Patel
                     </motion.h1>
 
                     <motion.p
@@ -63,12 +64,13 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-secondary border-4 border-accent/20 overflow-hidden relative"
+                        className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-accent/20 overflow-hidden relative"
                     >
-                        {/* Placeholder for profile image */}
-                        <div className="w-full h-full flex items-center justify-center bg-secondary text-muted">
-                            <span className="text-6xl">DP</span>
-                        </div>
+                        <img
+                            src={profileImg}
+                            alt="Dhyey Patel"
+                            className="w-full h-full object-cover"
+                        />
                     </motion.div>
                 </div>
             </div>

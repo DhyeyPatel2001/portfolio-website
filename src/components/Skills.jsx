@@ -40,8 +40,8 @@ const Skills = () => {
                             viewport={{ once: true }}
                             className="bg-secondary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
-                            <h3 className="text-xl font-semibold text-accent mb-4 capitalize">
-                                {category.replace('_', ' / ')}
+                            <h3 className="text-xl font-semibold text-accent mb-4">
+                                {category === 'ml_ds' ? 'ML / DS' : category.charAt(0).toUpperCase() + category.slice(1)}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {items.map((skill) => (
